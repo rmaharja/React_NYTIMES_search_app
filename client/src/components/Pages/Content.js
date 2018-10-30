@@ -24,7 +24,12 @@ class Content extends Component {
   handleSubmit = (event) => {
     event.preventDefault();
     console.log("Form Submitted...");
-    console.log(event.target.value);
+    this.setState({
+      articleName: this.state.articleName,
+      articleNumber: this.state.articleNumber,
+      startYear: this.state.startYear,
+      endYear: this.state.endYear
+    })
   }
 
 
