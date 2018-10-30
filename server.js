@@ -18,10 +18,9 @@ const PORT = process.env.PORT || 3001;
 mongoose.connect(
   process.env.MONGODB_URI || "mongodb://localhost/reacnytimesdb",
   {
-    useMongoClient: true
+    useNewUrlParser: true
   }
 );
-
 
 // Start the API server
 app.listen(PORT, function() {
