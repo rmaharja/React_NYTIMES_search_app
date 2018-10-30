@@ -16,6 +16,7 @@ if (process.env.NODE_ENV === "production") {
   });
 }
 
+//Passing all routs through middleware first.
 app.use(routes);
 
 //Connecting to MongoDb 

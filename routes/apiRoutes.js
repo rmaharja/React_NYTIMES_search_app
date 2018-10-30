@@ -4,5 +4,7 @@ const router = require("express").Router();
 router.get("/api/articles", (req, res) => {
   axios
     .get(req.queryUrl)
-    .then((data) => console.log("Data: ",data));
+    .then((data) => res.json(data));
 })
+
+module.exports = router;
