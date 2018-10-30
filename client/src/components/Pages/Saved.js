@@ -7,7 +7,7 @@ const Saved = ()=>(
           <i className="fa fa-file-text" aria-hidden="true"></i>
           Saved Articles:
       </h3>
-      <div className="panel-body" id="top-results"></div>
+      <div className="panel-body" id="saved-articles"></div>
   </div>
   <br />
 </div>
