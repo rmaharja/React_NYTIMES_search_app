@@ -13,30 +13,25 @@ const Search = (props) => (
             <div className="panel-body">
                 <form id="form-body">
                     <div className="form-group">
-                        <label for="search">Search Term:</label>
-                        <input type="text" className="form-control" id="search-term" 
+                        <input type="text" className="form-control" id="search-term" placeholder="Search Term" 
                         onChange={props.handleInputChange}/>
                     </div>
 
                     <div className="form-group">
-                        <label for="number-records">Number of Articles:</label>
-                        <input type="text" className="form-control" id="number-records" 
+                        <input type="text" className="form-control" id="number-records" placeholder="Number of Articles"
                         onChange={props.handleInputChange}/>
                     </div>
 
                     <div className="form-group">
-                        <label for="year-initial">Start Year :
-                        </label>
-                        <input type="text" className="form-control" id="year-initial" />
+                        <input type="text" className="form-control" id="year-initial" placeholder="Start Year" />
                     </div>
 
                     <div className="form-group">
-                        <label for="year-end">End Year :</label>
-                        <input type="text" className="form-control" id="year-end"
+                        <input type="text" className="form-control" id="year-end" placeholder="End Year"
                         onChange={props.handleInputChange} />
                     </div>
 
-                    <button type="submit" className="btn btn-primary" id="submit-search">
+                    <button type="submit" className="btn btn-primary" id="submit-search" onClick={props.handleSubmit}>
                         <i className="fa fa-search"></i>
                         Search
                         </button>

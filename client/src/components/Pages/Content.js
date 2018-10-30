@@ -21,6 +21,11 @@ class Content extends Component {
     });
     console.log(value);
   }
+  handleSubmit = (event) => {
+    event.preventDefault();
+    console.log("Form Submitted...");
+    console.log(event.target.value);
+  }
 
 
   render () {
@@ -28,6 +33,7 @@ class Content extends Component {
       <div>
       <Search
         handleInputChange={this.handleInputChange}
+        handleSubmit={this.handleSubmit}
       ></Search>
       <Results></Results>
       <Saved></Saved>
