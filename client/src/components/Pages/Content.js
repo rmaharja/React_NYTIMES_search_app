@@ -7,7 +7,7 @@ class Content extends Component {
 
   state = {
     articleName: "",
-    articleNumber: "",
+    // articleNumber: "",
     startYear: "",
     endYear: ""
   }
@@ -26,7 +26,7 @@ class Content extends Component {
     console.log("Form Submitted...");
     this.setState({
       articleName: this.state.articleName,
-      articleNumber: this.state.articleNumber,
+      // articleNumber: this.state.articleNumber,
       startYear: this.state.startYear,
       endYear: this.state.endYear
     })

@@ -17,10 +17,10 @@ const Search = (props) => (
                         onChange={props.handleInputChange}/>
                     </div>
 
-                    <div className="form-group">
+                    {/* <div className="form-group">
                         <input type="text" className="form-control" id="number-records" placeholder="Number of Articles"
                         onChange={props.handleInputChange}/>
-                    </div>
+                    </div> */}
 
                     <div className="form-group">
                         <input type="text" className="form-control" id="year-initial" placeholder="Start Year" />

@@ -1,6 +1,10 @@
 const express = require('express');
 const app = express();
 const mongoose = require('mongoose');
+const routes = require("./routes");
+
+//Assigning Port for Backend
+const PORT = process.env.PORT || 3001;
 
 
 //Routing
@@ -12,7 +16,7 @@ if (process.env.NODE_ENV === "production") {
   });
 }
 
-const PORT = process.env.PORT || 3001;
+app.use(routes);
 
 //Connecting to MongoDb 
 mongoose.connect(
