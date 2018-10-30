@@ -34,24 +34,15 @@ const Search = ({children}) => (
 
                     <button type="submit" className="btn btn-primary" id="submit-search">
                         <i className="fa fa-search"></i>
-                        Search</button>
+                        Search
+                        </button>
 
                 </form>
             </div>
         </div>
-        {/* Results: */}
         <br></br>
-        <div className="panel panel-default">
-            <div className="panel-heading">
-                <h3>
-                    <i className="fa fa-file-text" aria-hidden="true"></i>
-                    Top Results:
-                </h3>
-                <div className="panel-body" id="top-results"></div>
-            </div>
-        </div>
-
     </div>
+    
 )
 
 export default Search;
