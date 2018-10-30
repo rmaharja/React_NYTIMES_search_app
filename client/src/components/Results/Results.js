@@ -9,6 +9,4 @@ const Search = ({children}) => (
   </div>
   )
 
-
-
 export default Search;
