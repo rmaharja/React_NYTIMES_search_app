@@ -2,7 +2,14 @@ import React from "react";
 
 const Jumbotron = ({ children }) => (
   <div
-    style={{ height: 200, clear: "both", paddingTop: 70, textAlign: "center", background:"#336699" }}
+    style={{ 
+      height: 200, 
+      clear: "both", 
+      paddingTop: 70, 
+      textAlign: "center", 
+      background:"#336699",
+      marginBottom: "20px"
+     }}
     className="jumbotron-fluid"
   >
      <h1>NY Times Article Search</h1>
